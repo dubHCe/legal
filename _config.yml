@@ -1,0 +1,37 @@
+# Site metadata
+title: Central Alerts — Legal
+description: Privacy policy and legal documents for Central Alerts
+author: Dubiel Hernandez Guerrero
+
+# Use the minima theme as a starting point (GitHub Pages default).
+# Customizations are in assets/css/style.scss.
+theme: minima
+minima:
+  skin: auto
+
+# Markdown parser (GitHub-flavored)
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  hard_wrap: false
+
+# URL settings
+url: "https://legal.bestcontrader.com"
+baseurl: ""
+
+# Exclude files/folders from Jekyll build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+
+# Minima theme navigation links
+header_pages:
+  - privacy.md
+
+# Don't generate an RSS feed for legal content
+feed:
+  disable: true

@@ -1,0 +1,91 @@
+---
+# This front-matter block tells Jekyll to process this as a page
+# and output the SCSS to /assets/css/style.css at the site root.
+---
+
+// Brand colors (match Central Alerts app)
+$brand-navy: #1E3A5F;
+$brand-navy-deep: #14293F;
+$brand-navy-soft: #4A6A8F;
+$brand-surface: #F7F8FA;
+
+// Override minima's defaults with our brand palette
+$brand-color: $brand-navy !default;
+$brand-color-light: $brand-navy-soft !default;
+$brand-color-dark: $brand-navy-deep !default;
+
+$link-base-color: $brand-navy !default;
+$link-visited-color: $brand-navy-deep !default;
+$link-hover-color: $brand-navy-soft !default;
+
+$header-bg-color: $brand-surface !default;
+$site-title-color: $brand-navy-deep !default;
+
+// Import minima after overriding variables
+@import "minima";
+
+// Extra custom touches
+body {
+  font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+}
+
+// Site title and navigation — navy, semi-bold
+.site-title,
+.site-title:visited {
+  color: $brand-navy-deep !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.site-header {
+  border-top-color: $brand-navy;
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+// Headings inside content
+.post-content,
+.page-content {
+  h1, h2, h3, h4 {
+    color: $brand-navy-deep;
+    font-weight: 700;
+  }
+  h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-bottom: 0.3em;
+    margin-top: 1.8em;
+  }
+  a {
+    color: $brand-navy;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    &:hover {
+      color: $brand-navy-soft;
+    }
+  }
+  strong {
+    color: $brand-navy-deep;
+  }
+}
+
+// Page title spacing
+.post-title,
+.page-heading {
+  color: $brand-navy-deep;
+  letter-spacing: 0.3px;
+}
+
+// Footer
+.site-footer {
+  border-top-color: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 0.85em;
+}
+
+// Tables (if used in the policy)
+table {
+  th {
+    background-color: $brand-surface;
+    color: $brand-navy-deep;
+  }
+}
