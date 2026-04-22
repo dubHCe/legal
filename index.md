@@ -13,6 +13,8 @@ application and its associated services.
 
 - [**Privacy Policy**](/privacy/) — what information we collect, how we
   use it, and your rights.
+- [**Terms of Use**](/terms/) — the agreement governing your use of
+  Central Alerts.
 
 ## Contact
 
